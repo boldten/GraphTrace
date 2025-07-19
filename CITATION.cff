@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite our paper:"
+authors:
+  - family-names: Boldt
+    given-names: Martin
+    affiliation: Blekinge Institute of Technology, Sweden
+  - family-names: Lewenhagen
+    given-names: Kenneth
+    affiliation: Blekinge Institute of Technology, Sweden
+  - family-names: Borg
+    given-names: Anton
+    affiliation: Blekinge Institute of Technology, Sweden
+  - family-names: Kronkvist
+    given-names: Karl
+    affiliation: Malmö University, Sweden
+  - family-names: Gerell
+    given-names: Manne
+    affiliation: Malmö University, Sweden
+title: "GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement"
+doi: 10.1007/s10940-024-09660-2
+url: https://link.springer.com/article/10.1007/s10940-024-09660-2
+date-released: 2025-07-04
+version: 1.0
+type: article
+journal:
+  name: Journal of Quantitative Criminology
+  volume: 41
+  issue: 3
