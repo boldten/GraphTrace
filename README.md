@@ -1,4 +1,4 @@
-# GraphTrace: Crime Hotspot Detection Using Graph-Based Analysis
+# *GraphTrace*: Crime Hotspot Detection Using Graph-Based Analysis
 
 GraphTrace is a Python implementation of a crime hotspot detection algorithm based on spatial graph analysis. GraphTrace identifies and ranks spatial locations by crime intensity using graph theory and geospatial clustering techniques. For more information refer to the paper 'GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement' in [Journal of Quantitative Criminology](https://link.springer.com/journal/10940).
 
@@ -8,7 +8,7 @@ GraphTrace is a Python implementation of a crime hotspot detection algorithm bas
 
 This project provides tools to:
 - Preprocess crime incident data with geospatial attributes
-- Construct spatial graphs using proximity (BallTree)
+- Construct spatial graph using proximity (BallTree)
 - Detect and rank crime hotspots
 - Evaluate spatial accuracy over future crime data
 
@@ -19,10 +19,10 @@ This project provides tools to:
 ```
 .
 ├── GraphTrace.py              # Main entry point to run the hotspot detection pipeline
-├── GraphTrace_functions.py   # Core logic: graph construction, hotspot ranking, evaluation
-├── LICENSE.txt                # MIT License (see below)
+├── GraphTrace_functions.py    # Core logic: graph construction, hotspot ranking, evaluation
+├── LICENSE 	               # MIT License (see below)
 ├── Data/                      # Input data directory (crime datasets as CSV)
-│   └── Malmo_example_crime_data.csv # Example crime data
+│   └── Malmo_example_crime_data.csv # Example crime data (with random noise added)
 └── Results/                   # Output directory (pickled graphs, results CSVs)
 ```
 
@@ -73,7 +73,28 @@ The program takes one argument that should be the path to a CSV file containing 
 - latitude: floating point values representing latitude coordinates, e.g., 55.6050.
 - longitude:floating point values representing longitude coordinates, e.g., 13.1075.
 
-Note: the crime data that is read must contain crime data for two consequtive years, e.g, 1 and 2, or 2023 and 2024. The first one is used for finding hotspot positions given that crime data, then these positions are evaluated against how many crimes are within the radius during the next year. If more than two years are included, e.g., [2022, 2023, 2024], then hotspots are detected using first the crimes in year 2022, and then for 2023. These positions are evaluated against the crime data in year 2023 and 2024, respectively. 
+*Note: the crime data that is read must contain crime data for two consequtive years, e.g, 1 and 2, or 2023 and 2024. The first one is used for finding hotspot positions given that crime data, then these positions are evaluated against how many crimes are within the radius during the next year. If more than two years are included, e.g., [2022, 2023, 2024], then hotspots are detected using first the crimes in year 2022, and then for 2023. These positions are evaluated against the crime data in year 2023 and 2024, respectively.* 
+
+---
+
+## Citation
+
+If you use GraphTrace in your work, please cite the following publication:
+
+> Boldt, M., Lewenhagen, K., Borg, A., Kronkvist, K., & Gerell, M. (2025). *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement*. Journal of Quantitative Criminology, 40(3). [https://doi.org/10.1007/s10940-024-09660-2](https://doi.org/10.1007/s10940-024-09660-2)
+
+BibTeX:
+```bibtex
+@article{boldt2025graphtrace,
+  title={GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement},
+  author={Boldt, Martin and Lewenhagen, Kenneth and Borg, Anton and Kronkvist, Karl and Gerell, Manne},
+  journal={Journal of Quantitative Criminology},
+  volume={41},
+  number={3},
+  year={2025},
+  doi={10.1007/s10940-024-09660-2}
+}
+```
 
 ---
 
@@ -85,4 +106,4 @@ This code is intended for research and educational purposes only. It is not inte
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
