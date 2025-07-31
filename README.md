@@ -77,27 +77,6 @@ The program takes one argument that should be the path to a CSV file containing 
 
 ---
 
-## Citation
-
-If you use GraphTrace in your work, please cite the following publication:
-
-> Boldt, M., Lewenhagen, K., Borg, A., Kronkvist, K., & Gerell, M. (2025). *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement*. Journal of Quantitative Criminology, 40(3). [https://doi.org/10.1007/s10940-024-09660-2](https://doi.org/10.1007/s10940-024-09660-2)
-
-BibTeX:
-```bibtex
-@article{boldt2025graphtrace,
-  title={GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement},
-  author={Boldt, Martin and Lewenhagen, Kenneth and Borg, Anton and Kronkvist, Karl and Gerell, Manne},
-  journal={Journal of Quantitative Criminology},
-  volume={41},
-  number={3},
-  year={2025},
-  doi={10.1007/s10940-024-09660-2}
-}
-```
-
----
-
 ## Disclaimer
 
 This code is intended for research and educational purposes only. It is not intended for operational use or for real-time law enforcement decisions without independent validation and oversight. Use at your own risk.
@@ -107,3 +86,22 @@ This code is intended for research and educational purposes only. It is not inte
 ## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+## Citation
+
+If you use GraphTrace in your work, please cite the following publication:
+
+> Boldt, M., Lewenhagen, K., Borg, A., Kronkvist, K., & Gerell, M. (2025). *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement*. Journal of Quantitative Criminology. [https://doi.org/10.1007/s10940-025-09623-9](https://doi.org/10.1007/s10940-025-09623-9)
+
+BibTeX:
+```bibtex
+@article{boldt2025graphtrace,
+  title={GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement},
+  author={Boldt, Martin and Lewenhagen, Kenneth and Borg, Anton and Kronkvist, Karl and Gerell, Manne},
+  journal={Journal of Quantitative Criminology},
+  year={2025},
+  doi={10.1007/s10940-025-09623-9}
+}
+```
+
+---
