@@ -1,6 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite our paper:"
-title: "GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement"
+title: "GraphTrace"
+version: "1.0"
+date-released: 2025-07-04
+type: software
 authors:
   - family-names: Boldt
     given-names: Martin
@@ -17,9 +20,25 @@ authors:
   - family-names: Gerell
     given-names: Manne
     affiliation: Malmö University, Sweden
-date-released: 2025-07-04
-version: 1.0.0
-doi: 10.1007/s10940-025-09623-9
-url: https://link.springer.com/article/10.1007/s10940-025-09623-9
-type: article
-repository-code: https://github.com/boldten/GraphTrace
+
+preferred-citation:
+  type: article
+  title: "GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement"
+  doi: 10.1007/s10940-025-09623-9
+  url: https://link.springer.com/article/10.1007/s10940-025-09623-9
+  date-published: 2025-07-30
+  journal:
+    name: Journal of Quantitative Criminology
+    issue: 3
+    volume: 40
+  authors:
+    - family-names: Boldt
+      given-names: Martin
+    - family-names: Lewenhagen
+      given-names: Kenneth
+    - family-names: Borg
+      given-names: Anton
+    - family-names: Kronkvist
+      given-names: Karl
+    - family-names: Gerell
+      given-names: Manne
