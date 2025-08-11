@@ -1,6 +1,11 @@
 # *GraphTrace*: Crime Hotspot Detection Using Graph-Based Analysis
 
-GraphTrace is a Python implementation of a crime hotspot detection algorithm based on spatial graph analysis. GraphTrace identifies and ranks spatial locations by crime intensity using graph theory and geospatial clustering techniques. For more information refer to the paper 'GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement' in [Journal of Quantitative Criminology](https://link.springer.com/journal/10940).
+**GraphTrace** is a Python implementation of a crime hotspot detection algorithm that leverages spatial graph analysis. It identifies and ranks locations by crime intensity using graph theory and geospatial clustering techniques. By operating on *unique* latitude–longitude coordinates rather than every individual crime event, GraphTrace significantly reduces the computational complexity of crime mapping. This design delivers fast, scalable performance while maintaining accuracy, even for large-scale urban datasets.  
+The example below shows a comparison of the Predictive Accuracy Index (PAI) for the top-100 positions detected by GraphTrace and several state-of-the-art methods, using official crime data from the city of Malmö, Sweden.
+
+![PAI for top-100 positions using subsequent year's evaluation data (100m)](pai_boxplot_eval_dist=100m.png)
+
+For full details, see the article *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement* in the [*Journal of Quantitative Criminology*](https://doi.org/10.1007/s10940-025-09623-9).
 
 ---
 
@@ -91,16 +96,19 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 If you use GraphTrace in your work, please cite the following publication:
 
-> Boldt, M., Lewenhagen, K., Borg, A., Kronkvist, K., & Gerell, M. (2025). *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement*. Journal of Quantitative Criminology. [https://doi.org/10.1007/s10940-025-09623-9](https://doi.org/10.1007/s10940-025-09623-9)
+> Boldt, M., Lewenhagen, K., Borg, A., Kronkvist, K., & Gerell, M. (2025). *GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement*. *Journal of Quantitative Criminology*, 1-32. [https://doi.org/10.1007/s10940-025-09623-9](https://doi.org/10.1007/s10940-025-09623-9)
 
 BibTeX:
 ```bibtex
 @article{boldt2025graphtrace,
-  title={GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement},
-  author={Boldt, Martin and Lewenhagen, Kenneth and Borg, Anton and Kronkvist, Karl and Gerell, Manne},
-  journal={Journal of Quantitative Criminology},
-  year={2025},
-  doi={10.1007/s10940-025-09623-9}
+author = {Boldt, Martin and Lewenhagen, Kenneth and Borg, Anton and Kronkvist, Karl and Gerell, Manne},
+doi = {10.1007/s10940-025-09623-9},
+journal = {Journal of Quantitative Criminology},
+month = jul,
+title = {{GraphTrace: A Graph-Guided Hotspot Detection Method for CCTV Placement}},
+pages = {1-32},
+url = {https://link.springer.com/article/10.1007/s10940-025-09623-9},
+year = {2025}
 }
 ```
 
