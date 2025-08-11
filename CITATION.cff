@@ -4,6 +4,7 @@ title: "GraphTrace"
 version: "1.0"
 date-released: 2025-07-04
 type: software
+
 authors:
   - family-names: Boldt
     given-names: Martin
@@ -27,8 +28,10 @@ preferred-citation:
   doi: 10.1007/s10940-025-09623-9
   url: https://link.springer.com/article/10.1007/s10940-025-09623-9
   date-published: 2025-07-30
-  journal:
-    name: Journal of Quantitative Criminology
+  journal: Journal of Quantitative Criminology
+  # volume:  (add if known)
+  # issue:   (add if known)
+  pages: 1-32
   authors:
     - family-names: Boldt
       given-names: Martin
